@@ -14,7 +14,7 @@ def get_video():
     capture=cv.VideoCapture(r"D:\BaiduNetdiskDownload\abc.flv")
     while(True):
         ret,frame=capture.read()#frame就是视频的帧
-        frame=cv.flip(frame,1)
+        frame=cv.flip(frame,1)#镜像水平翻转帧
         cv.imshow("video",frame)
         c=cv.waitKey(50)
         if c ==27:
