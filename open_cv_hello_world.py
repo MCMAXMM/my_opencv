@@ -3,6 +3,9 @@ import glob
 #读取照片
 path_list=glob.glob(r"D:\pythonrun\2018613pytorch\faces\*.jpg")
 src=cv.imread(r"D:\pythonrun\2018613pytorch\faces\252418361_440b75751b.jpg")
+print(src.shape)#形状
+print(src.size)#多少像素
+print(src.dtype)#数据类型，基本上与numpy相同
 cv.namedWindow("input image",cv.WINDOW_AUTOSIZE)#创建opencv自带的GUI窗口
 cv.imshow("input image",src)#显示时名字要与窗口的名字一致
 cv.waitKey(0)#等待多少毫秒后执行下一个命令，如果是0，就无限期等待，可以按任意键结束
