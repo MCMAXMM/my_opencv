@@ -23,3 +23,8 @@ def get_video():
         if c ==27:
             break
 get_video()读取video
+
+#保存图片
+src=cv.imread(r"D:\pythonrun\2018613pytorch\faces\252418361_440b75751b.jpg")
+src=cv.cvtColor(src,cv.COLOR_RGB2GRAY)#改成灰度图像
+cv.imwrite("./hello.jpg",src)
