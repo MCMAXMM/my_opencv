@@ -14,7 +14,7 @@ print("hello world")
 
 #读取视频的一个函数
 def get_video():
-    capture=cv.VideoCapture(r"D:\BaiduNetdiskDownload\abc.flv")
+    capture=cv.VideoCapture(r"D:\BaiduNetdiskDownload\abc.flv")#里面设置为0，1,2分别代表你的摄像头
     while(True):
         ret,frame=capture.read()#frame就是视频的帧
         frame=cv.flip(frame,1)#镜像水平翻转帧
