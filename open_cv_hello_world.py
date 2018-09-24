@@ -16,7 +16,7 @@ print("hello world")
 def get_video():
     capture=cv.VideoCapture(r"D:\BaiduNetdiskDownload\abc.flv")#里面设置为0，1,2分别代表你的摄像头
     while(True):
-        ret,frame=capture.read()#frame就是视频的帧
+        ret,frame=capture.read()#frame就是视频的帧,ret为Boolean值表示是否有返回值（是否读到东西）
         frame=cv.flip(frame,1)#镜像水平翻转帧
         cv.imshow("video",frame)
         c=cv.waitKey(50)
